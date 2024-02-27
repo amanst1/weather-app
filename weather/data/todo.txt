@@ -17,8 +17,7 @@ Component Structure
 
 
 Git commits
-- add state to location jsx
-- add handleInput function
+- set up api call and data storage in weatherapp jsx
 
 
 Data Needed for Current weather conditions

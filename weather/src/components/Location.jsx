@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Location = ({weather_data}) => {
     const [searchTerm, setSearchTerm] = useState('')
 
-    const { name } = weather_data;
+    const { address } = weather_data;
     const date = new Date();
     // const month = date.getMonth() + 1;
     // const weekDay = date.getDay();
@@ -18,7 +18,7 @@ const Location = ({weather_data}) => {
         <>
             <h2>Location</h2>
             <input type='text' value={searchTerm} onChange={handleInput} />
-            <h4>{name}</h4>
+            <h4>{address}</h4>
             <p> {date.toDateString()}  </p>
         </>
     )
@@ -26,7 +26,7 @@ const Location = ({weather_data}) => {
 
 Location.propTypes = {
     weather_data: PropTypes.object,
-    name: PropTypes.string,
+    address: PropTypes.string,
 };
 
 export default Location
