@@ -10,7 +10,7 @@ const WeatherDetails = ({weather_data}) => {
         <>
             <h2>WeatherDetails</h2>
             <CurrentWeather currentConditions={currentConditions} day={days[0]}/>
-            <HourlyForecast hours={days[0].hours} />
+            <HourlyForecast date={days[0].datetime} hours={days[0].hours} />
             <WeeklyForecast days={days} />
         </>
     )

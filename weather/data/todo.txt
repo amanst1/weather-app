@@ -1,0 +1,23 @@
+Todos
+- remove boilerplate icons, pics
+
+
+Component Structure
+-WeatherApp.jsx
+    -Location.jsx
+    -WeatherDetails.jsx
+        -CurrentWeather.jsx
+        -HourlyForecast.jsx
+            -HourlyItem.jsx
+        -WeeklyForecast.jsx
+            -WeeklyItem.jsx
+
+
+Git commits
+- set up component hierarchy and props part two
+
+
+Data Needed for Current weather conditions
+- temp              - sunrise and sunset
+- weather           - rain
+- high and low      - wind
