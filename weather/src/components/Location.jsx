@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const Location = ({weather_data}) => {
+const Location = ({weather_data, handleUserSearch}) => {
     const [searchTerm, setSearchTerm] = useState('')
 
     const { address } = weather_data;
@@ -18,6 +18,7 @@ const Location = ({weather_data}) => {
         <>
             <h2>Location</h2>
             <input type='text' value={searchTerm} onChange={handleInput} />
+            <button onClick={() => handleUserSearch(searchTerm)} >Enter</button>
             <h4>{address}</h4>
             <p> {date.toDateString()}  </p>
         </>
@@ -27,6 +28,7 @@ const Location = ({weather_data}) => {
 Location.propTypes = {
     weather_data: PropTypes.object,
     address: PropTypes.string,
+    handleUserSearch: PropTypes.func
 };
 
 export default Location
