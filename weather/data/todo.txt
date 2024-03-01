@@ -1,7 +1,7 @@
 Todos
 - remove boilerplate icons, pics
 - change conditions with weather icons
-- adjust dates for weekly forecasts
+- 
 
 
 Component Structure
@@ -16,7 +16,8 @@ Component Structure
 
 
 Git commits
-- 
+- delete boilerplate icons
+- add weather icons to project
 
 
 Data Needed for Current weather conditions
