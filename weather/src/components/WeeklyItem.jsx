@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { format } from 'date-fns';
 
 const WeeklyItem = ({dailyData}) => {
     const {datetime, icon, tempmax, tempmin, conditions} = dailyData;
@@ -7,7 +8,7 @@ const WeeklyItem = ({dailyData}) => {
         <>
             <h4>Weekly Item</h4>
 
-            <p>{datetime.slice(5, 10)}</p>
+            <p>{format(datetime, 'MM.dd')}</p>
 
             <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
             <p>{conditions}</p>
