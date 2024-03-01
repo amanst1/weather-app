@@ -5,7 +5,7 @@ const WeeklyForecast = ({days}) => {
 
     const dailyForecasts = days.map(day => {
         
-        if(days.indexOf(day) > 0) {
+        if(days.indexOf(day) > 0 && days.indexOf(day) < 6) {
             return <WeeklyItem key={day.datetime} dailyData={day} />
         }
     });

@@ -1,7 +1,6 @@
 Todos
 - remove boilerplate icons, pics
 - change conditions with weather icons
-- put hourly forecasts to be every 3 hours (index%3 === 0)
 - adjust dates for weekly forecasts
 
 

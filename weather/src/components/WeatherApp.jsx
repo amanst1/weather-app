@@ -12,7 +12,7 @@ const WeatherApp = ({ currentLocation }) => {
     
     useEffect(() => {
 
-            fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchQuery}/2024-02-27/2024-03-18?unitGroup=metric&key=PNKK9YUZC4NSKPG8WRBXBMXYV`)
+            fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchQuery}?unitGroup=metric&key=PNKK9YUZC4NSKPG8WRBXBMXYV`)
             .then(res => res.json())
             .then(data => setWeatherData(data))
             .catch(err => {
