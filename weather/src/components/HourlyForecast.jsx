@@ -3,7 +3,9 @@ import HourlyItem from './HourlyItem'
 
 const HourlyForecast = ({hours, date}) => {
     const hourlyForecasts = hours.map(hour => {
-        return <HourlyItem key={hour.datetime} date={date} hourlyData={hour} />
+        if(hours.indexOf(hour)%3 === 0) {
+            return <HourlyItem key={hour.datetime} date={date} hourlyData={hour} />
+        }
     })
 
     return(

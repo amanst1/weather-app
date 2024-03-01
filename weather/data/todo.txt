@@ -2,7 +2,7 @@ Todos
 - remove boilerplate icons, pics
 - change conditions with weather icons
 - put hourly forecasts to be every 3 hours (index%3 === 0)
-- make daily forecasts skip current day's data (if index = 0 -> pass)
+- adjust dates for weekly forecasts
 
 
 Component Structure
