@@ -17,8 +17,7 @@ Component Structure
 
 
 Git commits
-- set up user current location on first load
-- add user input processing
+- 
 
 
 Data Needed for Current weather conditions

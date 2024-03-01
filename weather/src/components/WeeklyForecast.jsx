@@ -4,8 +4,12 @@ import PropTypes from 'prop-types';
 const WeeklyForecast = ({days}) => {
 
     const dailyForecasts = days.map(day => {
-        return <WeeklyItem key={day.datetime} dailyData={day} />
-    })
+        
+        if(days.indexOf(day) > 0) {
+            console.log(days.indexOf(day));
+            return <WeeklyItem key={day.datetime} dailyData={day} />
+        }
+    });
 
     return(
         <>
