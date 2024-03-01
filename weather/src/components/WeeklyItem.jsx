@@ -6,10 +6,10 @@ const WeeklyItem = ({dailyData}) => {
     return(
         <>
             <h4>Weekly Item</h4>
-            <p>{datetime}</p>
+            <p>{datetime.slice(5, 10)}</p>
             <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
-            <p>{tempmax.toFixed()}</p>
-            <p>{tempmin.toFixed()}</p>
+            <p>{tempmax.toFixed()}°C</p>
+            <p>{tempmin.toFixed()}°C</p>
         </>
     )
 }
