@@ -25,7 +25,7 @@ const WeatherApp = ({ currentLocation }) => {
     const handleUserSearch = (userInput) => {
         setLocation(userInput);
     }
-    
+
     return(
         <>
             <h1>WeatherApp</h1>

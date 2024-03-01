@@ -9,7 +9,7 @@ const HourlyItem = ({date, hourlyData}) => {
             <p>{date}</p>
             <p>{datetime}</p>
             <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
-            <p>{temp}</p>
+            <p>{temp.toFixed()}</p>
         </>
     )
 }

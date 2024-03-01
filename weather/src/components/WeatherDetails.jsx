@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const WeatherDetails = ({weather_data}) => {
     const {currentConditions, days} = weather_data;
-
+    
     return(
         <>
             <h2>WeatherDetails</h2>

@@ -8,8 +8,8 @@ const WeeklyItem = ({dailyData}) => {
             <h4>Weekly Item</h4>
             <p>{datetime}</p>
             <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
-            <p>{tempmax}</p>
-            <p>{tempmin}</p>
+            <p>{tempmax.toFixed()}</p>
+            <p>{tempmin.toFixed()}</p>
         </>
     )
 }

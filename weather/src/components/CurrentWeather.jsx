@@ -7,12 +7,12 @@ const CurrentWeather = ({currentConditions, day}) => {
     return(
         <>
             <h3>CurrentWeather</h3>
-            <p>Temp: {temp}</p>
+            <p>Temp: {temp.toFixed()}</p>
             <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
-            <p>High: {tempmax}</p>
-            <p>Low: {tempmin}</p>
+            <p>High: {tempmax.toFixed()}</p>
+            <p>Low: {tempmin.toFixed()}</p>
             <p>Windspeed: {windspeed}</p>
-            <p>Rain: {precipprob}</p>
+            <p>Rain: {precipprob}%</p>
             <p>Sunrise: {sunrise}</p>
             <p>Sunset: {sunset}</p>
 
