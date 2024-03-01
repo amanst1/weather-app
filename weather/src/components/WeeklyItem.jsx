@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types';
 
 const WeeklyItem = ({dailyData}) => {
+    const {datetime, icon, tempmax, tempmin} = dailyData;
+
     return(
         <>
             <h4>Weekly Item</h4>
-            <p>{dailyData.datetime}</p>
-            <p>{dailyData.conditions}</p>
-            <p>{dailyData.tempmax}</p>
-            <p>{dailyData.tempmin}</p>
+            <p>{datetime}</p>
+            <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
+            <p>{tempmax}</p>
+            <p>{tempmin}</p>
         </>
     )
 }

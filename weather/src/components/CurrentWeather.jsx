@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 
 const CurrentWeather = ({currentConditions, day}) => {
-    const {temp, precipprob, windspeed, conditions, sunrise, sunset} = currentConditions;
+    const {temp, precipprob, windspeed, icon, sunrise, sunset} = currentConditions;
     const {tempmax, tempmin} = day;
 
     return(
         <>
             <h3>CurrentWeather</h3>
             <p>Temp: {temp}</p>
-            <p>Condition: {conditions}</p>
+            <img src={`../../src/assets/${icon}.svg`} alt="weather condition icon" width="100" height="100" />
             <p>High: {tempmax}</p>
             <p>Low: {tempmin}</p>
             <p>Windspeed: {windspeed}</p>
