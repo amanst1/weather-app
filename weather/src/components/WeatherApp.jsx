@@ -30,7 +30,7 @@ const WeatherApp = ({ currentLocation }) => {
         <>
             <h1>WeatherApp</h1>
             {weatherData && <Location weather_data={weatherData} handleUserSearch={handleUserSearch} /> }
-            {weatherData && <WeatherDetails weather_data={weatherData} /> }
+            {weatherData ? <WeatherDetails weather_data={weatherData} /> :  <h3>Loading... </h3>}
         </>
     )
 }
